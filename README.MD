@@ -57,9 +57,11 @@ Windows 环境可以 [点击这里](http://www.runoob.com/docker/windows-docker-
     # EXPOSE 映射端口
     EXPOSE 7101:7101/tcpP
 
-    # ENTRYPOINT 执行某条命令 ENTRYPOINT 和 CMD 只能有一个 并执行最后一条  那也可以尝试 RUN
+    # ENTRYPOINT 执行某条命令 ENTRYPOINT 和 CMD 只能有一个 并执行最后一条  你也可以尝试使用 RUN
     ENTRYPOINT bash build.sh dev
 ```
+
+更多 Dockerfile 配置可以到 [docker docs](https://docs.docker.com/v17.09/engine/reference/builder/) 查看
 
 ##### 2. create image
 
@@ -89,3 +91,8 @@ Windows 环境可以 [点击这里](http://www.runoob.com/docker/windows-docker-
 ```shell
     docker push zmh6774517/aelf-block-api
 ```
+
+## 参考文献
+
+[docker docs](https://docs.docker.com/)
+[docker 菜鸟教程](http://www.runoob.com/docker/docker-tutorial.html)
